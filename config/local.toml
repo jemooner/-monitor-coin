@@ -1,0 +1,60 @@
+[server]
+port = ":9081"
+max_process = 2
+version = "1.0.0"
+name = "spider_strategy"
+data_path = "/www/monitor_coin/data"
+
+[log]
+log_path = "/opt/logs/monitor_coin/"
+keep_hours = 480
+
+[redis]
+addr = "8.142.157.45:6379"
+password = "X63&%e#8rf$^93fOpe"
+
+[mysql]
+dsn = "root:password@tcp(localhost:3306)/mb_coin?charset=utf8&timeout=2000ms"
+retry = 2
+pool_max_idle_conn = 5
+pool_max_open_conn = 20
+
+[binance]
+host = ["https://api.binance.com"]
+timeout_sec = 3
+sign_key = ""
+
+[mexc]
+host = ["https://api.mexc.com"]
+timeout_sec = 3
+sign_key = ""
+
+[teleGram]
+host = ["https://api.telegram.org"]
+timeout_sec = 3
+sign_key = ""
+
+[bitget]
+host = ["https://api.bitget.com"]
+timeout_sec = 3
+sign_key = ""
+
+[kucoin]
+host = ["https://api.kucoin.com"]
+timeout_sec = 3
+sign_key = ""
+
+[coinbase]
+host = ["https://api.exchange.coinbase.com"]
+timeout_sec = 3
+sign_key = ""
+
+[bitfinex]
+host = ["https://api-pub.bitfinex.com"]
+timeout_sec = 3
+sign_key = ""
+
+[bitstamp]
+host = ["https://www.bitstamp.net"]
+timeout_sec = 3
+sign_key = ""
